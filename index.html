@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BudgetBuddy Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <h2>BudgetBuddy</h2>
+      <nav>
+        <ul>
+          <li class="active">Dashboard</li>
+          <li>Categories</li>
+          <li>Reports</li>
+          <li>Settings</li>
+        </ul>
+      </nav>
+      <div class="user-info">
+        <p><strong>Sreeja Gunnam</strong></p>
+        <p>sreejagunnam@gmail.com</p>
+      </div>
+    </aside>
+
+    <main class="dashboard">
+      <header class="top-bar">
+        <input type="text" placeholder="Search transactions..." />
+        <div class="balance-badge">Current Balance: <strong>$5,247.83</strong></div>
+      </header>
+
+      <section class="cards">
+        <div class="card card-green">
+          <p>Total Balance</p>
+          <h2>$5,247.83</h2>
+          <span class="change up">+2.5%</span>
+        </div>
+        <div class="card card-red">
+          <p>Total Spent</p>
+          <h2>$1,248.92</h2>
+          <span class="change down">-12.3%</span>
+        </div>
+        <div class="card card-yellow">
+          <p>Savings</p>
+          <h2>68%</h2>
+          <span class="change up">+4.1%</span>
+        </div>
+        <div class="card card-gray">
+          <p>Top Category</p>
+          <h2>Food & Dining</h2>
+          <span class="amount">$486.20</span>
+        </div>
+      </section>
+
+      <section class="transactions">
+  <h3>Recent Transactions</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>15/1/2024</td>
+        <td>Food & Dining</td>
+        <td>Starbucks Coffee</td>
+        <td><span class="badge expense">Expense</span></td>
+        <td>$5.20</td>
+      </tr>
+      <tr>
+        <td>15/1/2024</td>
+        <td>Salary</td>
+        <td>Monthly Salary</td>
+        <td><span class="badge income">Income</span></td>
+        <td>$3,000.00</td>
+      </tr>
+      <tr>
+        <td>14/1/2024</td>
+        <td>Transportation</td>
+        <td>Uber Ride</td>
+        <td><span class="badge expense">Expense</span></td>
+        <td>$15.60</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+    </main>
+
+    <aside class="spending-breakdown">
+      <h3>Spending Breakdown</h3>
+      <ul>
+        <li><span>Food & Dining</span> <span>$486.20 (39%)</span></li>
+        <li><span>Transportation</span> <span>$324.50 (26%)</span></li>
+        <li><span>Bills & Utilities</span> <span>$278.15 (22%)</span></li>
+        <li><span>Entertainment</span> <span>$160.07</span></li>
+      </ul>
+    </aside>
+  </div>
+</body>
+</html>
+
